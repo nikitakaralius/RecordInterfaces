@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordInterfaces.SourceGene
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordInterfaces.Abstractions", "src\RecordInterfaces.Abstractions\RecordInterfaces.Abstractions.csproj", "{3A9C8F21-3A7B-4297-89D6-4CEC59CCE5D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordInterfaces.Sample", "src\RecordInterfaces.Sample\RecordInterfaces.Sample.csproj", "{489E43DE-1517-4235-B99B-71D48CEEABC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,7 @@ Global
 		{C8CE1571-CD5A-4B15-BC2D-EC40AFDFA9A0} = {01DFC812-CCD9-452C-87BF-8B23210C2BA1}
 		{6946757A-B0AE-4847-802E-278BA04D4655} = {9B1A5047-CC92-4045-B3E5-F18DDDDF6839}
 		{3A9C8F21-3A7B-4297-89D6-4CEC59CCE5D7} = {01DFC812-CCD9-452C-87BF-8B23210C2BA1}
+		{489E43DE-1517-4235-B99B-71D48CEEABC5} = {01DFC812-CCD9-452C-87BF-8B23210C2BA1}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C8CE1571-CD5A-4B15-BC2D-EC40AFDFA9A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -39,5 +42,9 @@ Global
 		{3A9C8F21-3A7B-4297-89D6-4CEC59CCE5D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A9C8F21-3A7B-4297-89D6-4CEC59CCE5D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A9C8F21-3A7B-4297-89D6-4CEC59CCE5D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{489E43DE-1517-4235-B99B-71D48CEEABC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{489E43DE-1517-4235-B99B-71D48CEEABC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{489E43DE-1517-4235-B99B-71D48CEEABC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{489E43DE-1517-4235-B99B-71D48CEEABC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
