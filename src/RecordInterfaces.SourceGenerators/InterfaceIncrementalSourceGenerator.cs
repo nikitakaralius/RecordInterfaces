@@ -23,7 +23,7 @@ public sealed class InterfaceIncrementalSourceGenerator : IIncrementalGenerator
            .SyntaxProvider
            .CreateSyntaxProvider(
                 (node, _) => node is InterfaceDeclarationSyntax,
-                (ctx, _) => GetRecordDeclarationForSourceGen(ctx))
+                (ctx, _) => GetInterfaceDeclarationForSourceGen(ctx))
            .Where(x => x.RecordInterfaceAttributeFound)
            .Select((x, _) => x.Node);
 
@@ -36,7 +36,7 @@ public sealed class InterfaceIncrementalSourceGenerator : IIncrementalGenerator
             (ctx, src) => GenerateCode(ctx, src.Left, src.Right));
     }
 
-    private static NodeDescriptor GetRecordDeclarationForSourceGen(GeneratorSyntaxContext context)
+    private static NodeDescriptor GetInterfaceDeclarationForSourceGen(GeneratorSyntaxContext context)
     {
         var interfaceDeclarationSyntax = (InterfaceDeclarationSyntax) context.Node;
 

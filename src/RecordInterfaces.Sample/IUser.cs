@@ -11,3 +11,13 @@ public partial interface IUser
     string? MiddleName { get; }
     int Age { get; }
 }
+
+[ImplementsRecordInterface]
+public sealed partial record DefaultUser : IUser
+{
+    public Guid Id { get; init; }
+    public string FirstName { get; init; } = string.Empty;
+    public string LastName { get; init; } = string.Empty;
+    public string? MiddleName { get; init; }
+    public int Age { get; init; }
+}
