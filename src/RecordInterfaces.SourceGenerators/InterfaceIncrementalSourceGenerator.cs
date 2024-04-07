@@ -12,7 +12,7 @@ using NodeDescriptor = (
 
 using PropertyDescriptor = (
     string Type,
-    string Name); // consider a default value?
+    string Name);
 
 [Generator]
 public sealed class InterfaceIncrementalSourceGenerator : IIncrementalGenerator
