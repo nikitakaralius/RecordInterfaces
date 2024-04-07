@@ -2,16 +2,16 @@ using RecordInterfaces.Abstractions;
 
 namespace RecordInterfaces.Sample;
 
-[RecordInterface]
-public partial interface IUser
+[ExtendedRecordInterface]
+public interface IUser
 {
     string FirstName { get; }
     string LastName { get; }
     string? MiddleName { get; }
 }
 
-[ImplementsRecordInterface]
-public sealed partial record DefaultUser : IUser
+[ExtendedRecordInterfaceImplementation]
+public sealed record DefaultUser : IUser
 {
     public string FirstName { get; init; } = string.Empty;
 

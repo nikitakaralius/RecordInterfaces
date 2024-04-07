@@ -54,7 +54,7 @@ public static class RecordInterfaceExtensions
         {
             Record1 => InvokeRecord1With(null, @this, value),
             Record2 => InvokeRecord2With(null, @this, value),
-            _      => throw new NotImplementedException()
+            _      => throw new NotImplementedException($"Type {@this.GetType().Name} is not a record type")
         };
     }
 }
