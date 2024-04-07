@@ -8,7 +8,9 @@ IUser user = new DefaultUser
     MiddleName = "Old last name"
 };
 
-user = user.With(firstName: "New first name");
+user = user.With(
+    firstName: "New first name",
+    lastName: "New last name");
 
 Console.WriteLine(user);
 

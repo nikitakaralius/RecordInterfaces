@@ -1,4 +1,3 @@
-using Microsoft.CodeAnalysis;
 using RecordInterfaces.Abstractions;
 
 namespace RecordInterfaces.Sample;
