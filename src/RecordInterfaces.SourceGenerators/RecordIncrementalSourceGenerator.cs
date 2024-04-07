@@ -14,7 +14,7 @@ using PropertyDescriptor = (
     string Type,
     string Name);
 
-[Generator]
+// [Generator]
 public sealed class RecordIncrementalSourceGenerator : IIncrementalGenerator
 {
     public void Initialize(IncrementalGeneratorInitializationContext context)
