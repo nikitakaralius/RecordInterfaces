@@ -9,7 +9,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\RecordInterfaces.Abstractions\RecordInterfaces.Abstractions.csproj" />
-      <ProjectReference Include="..\RecordInterfaces.SourceGenerators\RecordInterfaces.SourceGenerators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+      <ProjectReference Include="..\RecordInterfaces.SourceGenerators\RecordInterfaces.SourceGenerators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
     </ItemGroup>
 
 </Project>

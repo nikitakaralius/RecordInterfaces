@@ -127,8 +127,6 @@ public sealed class ExtendedRecordInterfaceSourceGenerator : IIncrementalGenerat
 
                   """;
 
-            // code = "";
-
             var @interface = interfaceDeclarationSyntax.Identifier.Text;
             context.AddSource($"{@interface}.g.cs", SourceText.From(code, Encoding.UTF8));
         }
@@ -345,7 +343,7 @@ public sealed class ExtendedRecordInterfaceSourceGenerator : IIncrementalGenerat
             $$"""
               public static class {{@interface}}Extensions
               {
-                  public static {{@interface}} With({{@interface}} @this, {{parameters}})
+                  public static {{@interface}} With(this {{@interface}} @this, {{parameters}})
                   {
               {{unsafeExtensionAccessors}}
                   
